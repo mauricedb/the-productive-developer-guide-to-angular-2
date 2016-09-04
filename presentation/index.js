@@ -46,8 +46,15 @@ const images = {
   ng1: require("../assets/ng1.png"),
   ng2: require("../assets/ng2.png"),
   milestones: require("../assets/milestones.png"),
-sergeant: require("../assets/sergeant.png"),
-  
+  sergeant: require("../assets/sergeant.png"),
+  reactStarter: require("../assets/react-starter.png"),
+  typescript: require("../assets/typescript.png"),
+  cli: require("../assets/cli.png"),
+  styleGuide: require("../assets/style-guide.png"),
+  codelyzer: require("../assets/codelyzer.png"),
+  lego: require("../assets/lego.png"),
+  modules: require("../assets/modules.png"),
+  components: require("../assets/components.png"),
 
 
   city: require("../assets/city.jpg"),
@@ -59,7 +66,6 @@ sergeant: require("../assets/sergeant.png"),
 preloader(images);
 
 const theme = createTheme({
-  // primary: "#ff4081"
   primary: "#ffffff"
 });
 
@@ -67,7 +73,9 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["fade"]} transitionDuration={500}>
+        <Deck transition={["fade"]} 
+              transitionDuration={500}
+              progress='bar'>
           <Slide bgImage={images.title.replace("/", "")}>
             <Heading margin="250px 0px 0px">
               The productive developer guide to Angular 2
@@ -92,8 +100,10 @@ export default class Presentation extends React.Component {
                Looking back
             </Heading>
           </Slide>
-          <Slide bgImage={images.trends.replace("/", "")}>
+          <Slide>
+            <Image src={images.trends.replace("/", "")} xmargin="0px auto 40px" height="500px"/>
           </Slide>
+
           <Slide>
             <Heading textColor='black' 
                      textSize='5rem'
@@ -109,21 +119,8 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.milestones.replace("/", "")}>
-          </Slide>
           <Slide>
-            <Image src={images.milestones.replace("/", "")} margin="0px auto 40px" width="900px" xheight="500px"/>
-          </Slide>
-          <Slide bgImage={images.sergeant.replace("/", "")} align="center flex-start">
-              <Heading textColor='black' 
-                      xtextAlign='left' 
-                       xmargin="-90px 0 0 -200px"
-                       xtextSize='5rem'>
-                Angular is very opinionated
-            </Heading>
-              <Heading textColor='black'>
-                
-            </Heading>
+            <Image src={images.milestones.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
           </Slide>
           <Slide>
               <Heading textColor='black' 
@@ -133,6 +130,58 @@ export default class Presentation extends React.Component {
             <Image src={images.sergeant.replace("/", "")} xmargin="0px auto 40px" height="500px"/>
           </Slide>
 
+          <Slide>
+            <Image src={images.reactStarter.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+          </Slide>
+
+          <Slide>
+            <Image src={images.typescript.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+          </Slide>
+
+          <Slide>
+            <Image src={images.cli.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+          </Slide>
+
+          <Slide>
+            <Image src={images.styleGuide.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+          </Slide>
+
+          <Slide>
+            <Image src={images.codelyzer.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <Slide>
+              <Heading textColor='black'>
+                Building blocks
+            </Heading>
+            <Layout>
+              <Fill>
+                <List>
+                  <ListItem>Modules</ListItem>
+                  <ListItem>Components</ListItem>
+                  <ListItem>Templates</ListItem>
+                  <ListItem>Data binding</ListItem>
+                  <ListItem>Directives</ListItem>
+                  <ListItem>Services</ListItem>
+                  <ListItem>Routing</ListItem>
+                  <ListItem>Dependency injection</ListItem>
+                </List>
+              </Fill>
+              <Fill>
+                <Image src={images.lego.replace("/", "")} 
+                       margin="40px auto 0px"
+                       width="460px"/>
+              </Fill>
+            </Layout>
+          </Slide>
+
+          <Slide>
+              <Heading textColor='black' 
+                       textSize='5rem'>
+                Modules
+            </Heading>
+            <Image src={images.modules.replace("/", "")} width="900px"/>
+          </Slide>
 
           <CodeSlide
             transition={[]}
@@ -146,8 +195,30 @@ export default class Presentation extends React.Component {
               { loc: [8, 11] },
               { loc: [15, 18] },
               { loc: [18, 21] },
-
             ]}/>
+
+          <Slide>
+              <Heading textColor='black' 
+                       textSize='5rem'>
+                Components
+            </Heading>
+            <Image src={images.components.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <CodeSlide
+            transition={[]}
+            lang="typescript"
+            code={require("raw!../assets/app.component.ts")}
+            ranges={[
+              { loc: [0, 255], title: "The main component" },
+              { loc: [10, 11] },
+              { loc: [3, 4], note: 'The component decorator' },
+              { loc: [5, 6], note: 'The markup tag' },
+              { loc: [6, 7], note: 'Location of markup' },
+              { loc: [8, 9], note: 'Dependencies on child components' },
+              { loc: [11, 12], note: 'Properties are exposed to the template' },
+            ]}/>
+
 
           <CodeSlide
             transition={[]}
