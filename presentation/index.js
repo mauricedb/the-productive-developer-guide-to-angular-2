@@ -55,6 +55,12 @@ const images = {
   lego: require("../assets/lego.png"),
   modules: require("../assets/modules.png"),
   components: require("../assets/components.png"),
+  templates: require("../assets/templates.png"),
+  services: require("../assets/services.png"),
+  di: require("../assets/di.png"),
+  http: require("../assets/http.png"),
+  rx: require("../assets/rx.png"),
+  thanks: require("../assets/thanks.png"),
 
 
   city: require("../assets/city.jpg"),
@@ -218,6 +224,117 @@ export default class Presentation extends React.Component {
               { loc: [8, 9], note: 'Dependencies on child components' },
               { loc: [11, 12], note: 'Properties are exposed to the template' },
             ]}/>
+
+          <Slide>
+              <Heading textColor='black' 
+                       textSize='5rem'>
+                Templates
+            </Heading>
+            <Image src={images.templates.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <CodeSlide
+            transition={[]}
+            lang="typescript"
+            code={require("raw!../assets/component.html")}
+            ranges={[
+              { loc: [0, 255], title: "Templates" },
+              { loc: [1, 2], note: 'Displaying data' },
+              { loc: [12, 13], note: 'Property binding' },
+              { loc: [10, 11], note: 'Structural directives' },
+              { loc: [11, 12], note: 'Event or output binding' },
+              { loc: [22, 24], note: '[()] Banana in a box two way data binding' },
+              // { loc: [3, 4], note: '' },
+            ]}/>
+
+          <Slide>
+            <Image src={images.services.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <Slide>
+              <Heading textColor='black' 
+                       textSize='5rem'>
+                Dependency injection
+            </Heading>
+            <Image src={images.di.replace("/", "")} margin="40px auto 0px" width="900px"/>
+          </Slide>
+
+          <CodeSlide
+            transition={[]}
+            lang="typescript"
+            code={require("raw!../assets/static.movie.service.ts")}
+            ranges={[
+              { loc: [0, 255], title: "Movie service" },
+              { loc: [3, 4], note: '' },
+              { loc: [2, 3], note: '' },
+              { loc: [7, 21], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+            ]}/>
+
+          <Slide>
+            <Image src={images.http.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <Slide>
+            <Image src={images.rx.replace("/", "")} width="900px"/>
+          </Slide>
+
+          <CodeSlide
+            transition={[]}
+            lang="typescript"
+            code={require("raw!../assets/http.movie.service.ts")}
+            ranges={[
+              { loc: [0, 255], title: "HTTP" },
+              { loc: [1, 2], note: 'Import HTTP' },
+              { loc: [8, 9], note: '' },
+              { loc: [11, 14], note: '' },
+              { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+            ]}/>
+
+          <CodeSlide
+            transition={[]}
+            lang="typescript"
+            code={require("raw!../assets/movies.component.ts")}
+            ranges={[
+              { loc: [0, 255], title: "Movies component" },
+              { loc: [2, 3], note: '' },
+              { loc: [10, 11], note: '' },
+              { loc: [16, 17], note: '' },
+              { loc: [19, 24], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+              // { loc: [3, 4], note: '' },
+            ]}/>
+
+          <Slide>
+            <Image src={images.thanks.replace("/", "")} width="900px"/>
+          </Slide>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           <CodeSlide
