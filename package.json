@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "the-productive-developer-guide-to-angular-2",
+  "version": "1.0.0",
+  "description": "The productive developer guide to Angular 2",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -10,7 +10,7 @@
     "deploy": "npm run clean & npm run build && surge -p .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "Maurice de Beijer",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "3.0.3",
