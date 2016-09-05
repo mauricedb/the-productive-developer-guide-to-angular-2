@@ -30,37 +30,34 @@ import preloader from "spectacle/lib/utils/preloader";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-// Import custom component
-import Interactive from "../assets/interactive";
-
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  title: require("../assets/title.png"),
-  maurice: require("../assets/maurice1024.jpg"),
-  lookingback: require('../assets/lookingback.jpg'),
-  trends: require("../assets/trends.png"),
-  ng1: require("../assets/ng1.png"),
-  ng2: require("../assets/ng2.png"),
-  milestones: require("../assets/milestones.png"),
-  sergeant: require("../assets/sergeant.png"),
-  reactStarter: require("../assets/react-starter.png"),
-  typescript: require("../assets/typescript.png"),
-  cli: require("../assets/cli.png"),
-  styleGuide: require("../assets/style-guide.png"),
-  codelyzer: require("../assets/codelyzer.png"),
-  lego: require("../assets/lego.png"),
-  modules: require("../assets/modules.png"),
-  components: require("../assets/components.png"),
-  templates: require("../assets/templates.png"),
-  services: require("../assets/services.png"),
-  di: require("../assets/di.png"),
-  http: require("../assets/http.png"),
-  rx: require("../assets/rx.png"),
-  thanks: require("../assets/thanks.png"),
+  title: require("../assets/images/title.png"),
+  maurice: require("../assets/images/maurice1024.jpg"),
+  lookingback: require('../assets/images/lookingback.jpg'),
+  trends: require("../assets/images/trends.png"),
+  ng1: require("../assets/images/ng1.png"),
+  ng2: require("../assets/images/ng2.png"),
+  milestones: require("../assets/images/milestones.png"),
+  sergeant: require("../assets/images/sergeant.png"),
+  reactStarter: require("../assets/images/react-starter.png"),
+  typescript: require("../assets/images/typescript.png"),
+  cli: require("../assets/images/cli.png"),
+  styleGuide: require("../assets/images/style-guide.png"),
+  codelyzer: require("../assets/images/codelyzer.png"),
+  lego: require("../assets/images/lego.png"),
+  modules: require("../assets/images/modules.png"),
+  components: require("../assets/images/components.png"),
+  templates: require("../assets/images/templates.png"),
+  services: require("../assets/images/services.png"),
+  di: require("../assets/images/di.png"),
+  http: require("../assets/images/http.png"),
+  rx: require("../assets/images/rx.png"),
+  thanks: require("../assets/images/thanks.png"),
 };
 
 preloader(images);
@@ -196,7 +193,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="typescript"
-            code={require("raw!../assets/app.module.ts")}
+            code={require("raw!../assets/code/app.module.ts")}
             ranges={[
               { loc: [0, 255], title: "Angular 2 main module" },
               { loc: [22, 24] },
@@ -219,7 +216,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="typescript"
-            code={require("raw!../assets/app.component.ts")}
+            code={require("raw!../assets/code/app.component.ts")}
             ranges={[
               { loc: [0, 255], title: "The main component" },
               { loc: [10, 11] },
@@ -242,7 +239,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="markup"
-            code={require("raw!../assets/component.html")}
+            code={require("raw!../assets/code/component.html")}
             ranges={[
               { loc: [0, 255], title: "Templates" },
               { loc: [1, 2], note: 'Displaying data' },
@@ -271,7 +268,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="typescript"
-            code={require("raw!../assets/static.movie.service.ts")}
+            code={require("raw!../assets/code/static.movie.service.ts")}
             ranges={[
               { loc: [0, 255], title: "Movie service" },
               { loc: [3, 4], note: '' },
@@ -292,7 +289,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="typescript"
-            code={require("raw!../assets/http.movie.service.ts")}
+            code={require("raw!../assets/code/http.movie.service.ts")}
             ranges={[
               { loc: [0, 255], title: "HTTP" },
               { loc: [1, 2], note: 'Import HTTP' },
@@ -304,7 +301,7 @@ export default class Presentation extends React.Component {
           <CodeSlide
             transition={[]}
             lang="typescript"
-            code={require("raw!../assets/movies.component.ts")}
+            code={require("raw!../assets/code/movies.component.ts")}
             ranges={[
               { loc: [0, 255], title: "Movies component" },
               { loc: [2, 3], note: '' },
