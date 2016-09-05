@@ -3,26 +3,26 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  Appear,
-  BlockQuote,
-  Cite,
-  CodePane,
+  // Appear,
+  // BlockQuote,
+  // Cite,
+  // CodePane,
   Deck,
   Fill,
   Heading,
   Image,
   Layout,
-  Link,
+  // Link,
   ListItem,
   List,
-  Markdown,
-  Quote,
+  // Markdown,
+  // Quote,
   Slide,
   Spectacle,
-  Text
+  // Text
 } from "spectacle";
 
-import CodeSlide from 'spectacle-code-slide';
+import CodeSlide from "spectacle-code-slide";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -38,7 +38,7 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   title: require("../assets/images/title.png"),
   maurice: require("../assets/images/maurice1024.jpg"),
-  lookingback: require('../assets/images/lookingback.jpg'),
+  lookingback: require("../assets/images/lookingback.jpg"),
   trends: require("../assets/images/trends.png"),
   ng1: require("../assets/images/ng1.png"),
   ng2: require("../assets/images/ng2.png"),
@@ -57,7 +57,7 @@ const images = {
   di: require("../assets/images/di.png"),
   http: require("../assets/images/http.png"),
   rx: require("../assets/images/rx.png"),
-  thanks: require("../assets/images/thanks.png"),
+  thanks: require("../assets/images/thanks.png")
 };
 
 preloader(images);
@@ -70,7 +70,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["fade"]} 
+        <Deck transition={["fade"]}
               transitionDuration={500}
               progress='bar'>
           <Slide bgImage={images.title.replace("/", "")}>
@@ -98,12 +98,12 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide>
-            <Image src={images.trends.replace("/", "")} 
+            <Image src={images.trends.replace("/", "")}
                    height="500px"/>
           </Slide>
 
           <Slide>
-            <Heading textColor='black' 
+            <Heading textColor='black'
                      textSize='5rem'
                      margin='50px'>
                 Angular 2 !== Angular 1
@@ -118,16 +118,16 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide>
-            <Image src={images.milestones.replace("/", "")} 
+            <Image src={images.milestones.replace("/", "")}
                    width="900px"/>
           </Slide>
           <Slide>
-              <Heading textColor='black' 
+              <Heading textColor='black'
                        textSize='5rem'>
                 Angular is opinionated
             </Heading>
-            <Image src={images.sergeant.replace("/", "")} 
-                   margin="40px auto 0px" 
+            <Image src={images.sergeant.replace("/", "")}
+                   margin="40px auto 0px"
                    height="500px"/>
           </Slide>
 
@@ -137,22 +137,22 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Image src={images.typescript.replace("/", "")} 
+            <Image src={images.typescript.replace("/", "")}
                    width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.cli.replace("/", "")} 
+            <Image src={images.cli.replace("/", "")}
                    width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.styleGuide.replace("/", "")} 
+            <Image src={images.styleGuide.replace("/", "")}
                    width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.codelyzer.replace("/", "")} 
+            <Image src={images.codelyzer.replace("/", "")}
                    width="900px"/>
           </Slide>
 
@@ -174,7 +174,7 @@ export default class Presentation extends React.Component {
                 </List>
               </Fill>
               <Fill>
-                <Image src={images.lego.replace("/", "")} 
+                <Image src={images.lego.replace("/", "")}
                        margin="40px auto 0px"
                        width="460px"/>
               </Fill>
@@ -182,11 +182,11 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-              <Heading textColor='black' 
+              <Heading textColor='black'
                        textSize='5rem'>
                 Modules
             </Heading>
-            <Image src={images.modules.replace("/", "")} 
+            <Image src={images.modules.replace("/", "")}
                    width="900px"/>
           </Slide>
 
@@ -197,19 +197,20 @@ export default class Presentation extends React.Component {
             ranges={[
               { loc: [0, 255], title: "Angular 2 main module" },
               { loc: [22, 24] },
-              { loc: [7, 8], note: 'The module decorator' },
+              { loc: [7, 8], note: "The module decorator" },
               { loc: [0, 1] },
               { loc: [8, 11] },
               { loc: [15, 18] },
-              { loc: [18, 21] },
-            ]}/>
+              { loc: [18, 21] }
+            ]}
+          />
 
           <Slide>
-              <Heading textColor='black' 
+              <Heading textColor='black'
                        textSize='5rem'>
                 Components
             </Heading>
-            <Image src={images.components.replace("/", "")} 
+            <Image src={images.components.replace("/", "")}
                    width="900px"/>
           </Slide>
 
@@ -220,19 +221,20 @@ export default class Presentation extends React.Component {
             ranges={[
               { loc: [0, 255], title: "The main component" },
               { loc: [10, 11] },
-              { loc: [3, 4], note: 'The component decorator' },
-              { loc: [5, 6], note: 'The markup tag' },
-              { loc: [6, 7], note: 'Location of markup' },
-              { loc: [8, 9], note: 'Dependencies on child components' },
-              { loc: [11, 12], note: 'Properties are exposed to the template' },
-            ]}/>
+              { loc: [3, 4], note: "The component decorator" },
+              { loc: [5, 6], note: "The markup tag" },
+              { loc: [6, 7], note: "Location of markup" },
+              { loc: [8, 9], note: "Dependencies on child components" },
+              { loc: [11, 12], note: "Properties are exposed to the template" }
+            ]}
+          />
 
           <Slide>
-              <Heading textColor='black' 
+              <Heading textColor='black'
                        textSize='5rem'>
                 Templates
             </Heading>
-            <Image src={images.templates.replace("/", "")} 
+            <Image src={images.templates.replace("/", "")}
                    width="900px"/>
           </Slide>
 
@@ -242,26 +244,26 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/component.html")}
             ranges={[
               { loc: [0, 255], title: "Templates" },
-              { loc: [1, 2], note: 'Displaying data' },
-              { loc: [12, 13], note: 'Property binding' },
-              { loc: [10, 11], note: 'Structural directives' },
-              { loc: [11, 12], note: 'Event or output binding' },
-              { loc: [22, 24], note: '[()] Banana in a box two way data binding' },
-              // { loc: [3, 4], note: '' },
-            ]}/>
+              { loc: [1, 2], note: "Displaying data" },
+              { loc: [12, 13], note: "Property binding" },
+              { loc: [10, 11], note: "Structural directives" },
+              { loc: [11, 12], note: "Event or output binding" },
+              { loc: [22, 24], note: "[()] Banana in a box two way data binding" }
+            ]}
+          />
 
           <Slide>
-            <Image src={images.services.replace("/", "")} 
+            <Image src={images.services.replace("/", "")}
                    width="900px"/>
           </Slide>
 
           <Slide>
-              <Heading textColor='black' 
+              <Heading textColor='black'
                        textSize='5rem'>
                 Dependency injection
             </Heading>
-            <Image src={images.di.replace("/", "")} 
-                   margin="40px auto 0px" 
+            <Image src={images.di.replace("/", "")}
+                   margin="40px auto 0px"
                    width="900px"/>
           </Slide>
 
@@ -271,18 +273,19 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/static.movie.service.ts")}
             ranges={[
               { loc: [0, 255], title: "Movie service" },
-              { loc: [3, 4], note: '' },
-              { loc: [2, 3], note: '' },
-              { loc: [7, 21], note: '' },
-            ]}/>
+              { loc: [3, 4], note: "" },
+              { loc: [2, 3], note: "" },
+              { loc: [7, 21], note: "" }
+            ]}
+          />
 
           <Slide>
-            <Image src={images.http.replace("/", "")} 
+            <Image src={images.http.replace("/", "")}
                    width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.rx.replace("/", "")} 
+            <Image src={images.rx.replace("/", "")}
                    width="900px"/>
           </Slide>
 
@@ -292,11 +295,12 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/http.movie.service.ts")}
             ranges={[
               { loc: [0, 255], title: "HTTP" },
-              { loc: [1, 2], note: 'Import HTTP' },
-              { loc: [8, 9], note: '' },
-              { loc: [11, 14], note: '' },
-              { loc: [3, 4], note: '' },
-            ]}/>
+              { loc: [1, 2], note: "Import HTTP" },
+              { loc: [8, 9], note: "" },
+              { loc: [11, 14], note: "" },
+              { loc: [3, 4], note: "" }
+            ]}
+          />
 
           <CodeSlide
             transition={[]}
@@ -304,11 +308,12 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/movies.component.ts")}
             ranges={[
               { loc: [0, 255], title: "Movies component" },
-              { loc: [2, 3], note: '' },
-              { loc: [10, 11], note: '' },
-              { loc: [16, 17], note: '' },
-              { loc: [19, 24], note: '' },
-            ]}/>
+              { loc: [2, 3], note: "" },
+              { loc: [10, 11], note: "" },
+              { loc: [16, 17], note: "" },
+              { loc: [19, 24], note: "" }
+            ]}
+          />
 
           <Slide>
             <Image src={images.thanks.replace("/", "")} width="900px"/>
