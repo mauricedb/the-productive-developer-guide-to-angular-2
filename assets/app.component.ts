@@ -9,5 +9,5 @@ import { MoviesComponent } from './movies';
   directives: [MoviesComponent]
 })
 export class AppComponent {
-  title = 'app works for sdn!';
+  title = 'app works!';
 }

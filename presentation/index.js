@@ -107,7 +107,8 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
           <Slide>
-            <Image src={images.trends.replace("/", "")} xmargin="0px auto 40px" height="500px"/>
+            <Image src={images.trends.replace("/", "")} 
+                   height="500px"/>
           </Slide>
 
           <Slide>
@@ -126,34 +127,42 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide>
-            <Image src={images.milestones.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+            <Image src={images.milestones.replace("/", "")} 
+                   width="900px"/>
           </Slide>
           <Slide>
               <Heading textColor='black' 
                        textSize='5rem'>
                 Angular is opinionated
             </Heading>
-            <Image src={images.sergeant.replace("/", "")} xmargin="0px auto 40px" height="500px"/>
+            <Image src={images.sergeant.replace("/", "")} 
+                   margin="40px auto 0px" 
+                   height="500px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.reactStarter.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+            <Image src={images.reactStarter.replace("/", "")} x
+                   width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.typescript.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+            <Image src={images.typescript.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.cli.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+            <Image src={images.cli.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.styleGuide.replace("/", "")} xmargin="0px auto 40px" width="900px"/>
+            <Image src={images.styleGuide.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.codelyzer.replace("/", "")} width="900px"/>
+            <Image src={images.codelyzer.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
@@ -186,7 +195,8 @@ export default class Presentation extends React.Component {
                        textSize='5rem'>
                 Modules
             </Heading>
-            <Image src={images.modules.replace("/", "")} width="900px"/>
+            <Image src={images.modules.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <CodeSlide
@@ -208,7 +218,8 @@ export default class Presentation extends React.Component {
                        textSize='5rem'>
                 Components
             </Heading>
-            <Image src={images.components.replace("/", "")} width="900px"/>
+            <Image src={images.components.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <CodeSlide
@@ -230,12 +241,13 @@ export default class Presentation extends React.Component {
                        textSize='5rem'>
                 Templates
             </Heading>
-            <Image src={images.templates.replace("/", "")} width="900px"/>
+            <Image src={images.templates.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <CodeSlide
             transition={[]}
-            lang="typescript"
+            lang="markup"
             code={require("raw!../assets/component.html")}
             ranges={[
               { loc: [0, 255], title: "Templates" },
@@ -248,7 +260,8 @@ export default class Presentation extends React.Component {
             ]}/>
 
           <Slide>
-            <Image src={images.services.replace("/", "")} width="900px"/>
+            <Image src={images.services.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
@@ -256,7 +269,9 @@ export default class Presentation extends React.Component {
                        textSize='5rem'>
                 Dependency injection
             </Heading>
-            <Image src={images.di.replace("/", "")} margin="40px auto 0px" width="900px"/>
+            <Image src={images.di.replace("/", "")} 
+                   margin="40px auto 0px" 
+                   width="900px"/>
           </Slide>
 
           <CodeSlide
@@ -268,18 +283,16 @@ export default class Presentation extends React.Component {
               { loc: [3, 4], note: '' },
               { loc: [2, 3], note: '' },
               { loc: [7, 21], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
             ]}/>
 
           <Slide>
-            <Image src={images.http.replace("/", "")} width="900px"/>
+            <Image src={images.http.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <Slide>
-            <Image src={images.rx.replace("/", "")} width="900px"/>
+            <Image src={images.rx.replace("/", "")} 
+                   width="900px"/>
           </Slide>
 
           <CodeSlide
@@ -292,9 +305,6 @@ export default class Presentation extends React.Component {
               { loc: [8, 9], note: '' },
               { loc: [11, 14], note: '' },
               { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
             ]}/>
 
           <CodeSlide
@@ -307,9 +317,6 @@ export default class Presentation extends React.Component {
               { loc: [10, 11], note: '' },
               { loc: [16, 17], note: '' },
               { loc: [19, 24], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
-              // { loc: [3, 4], note: '' },
             ]}/>
 
           <Slide>
