@@ -19,7 +19,7 @@ import {
   // Quote,
   Slide,
   Spectacle,
-  // Text
+  Text
 } from "spectacle";
 
 import CodeSlide from "spectacle-code-slide";
@@ -94,11 +94,14 @@ export default class Presentation extends React.Component {
               <ListItem>E-mail:	maurice.de.beijer@gmail.com</ListItem>
             </List>
           </Slide>
-          <Slide bgImage={images.lookingback.replace("/", "")}>
+
+          <Slide bgImage={images.lookingback.replace("/", "")} 
+                 notes="https://hd.unsplash.com/photo-1467844275056-5a15a5a4946a">
               <Heading textColor='black'>
                Looking back
             </Heading>
           </Slide>
+
           <Slide>
             <Image src={images.trends.replace("/", "")}
                    height="500px"/>
@@ -123,7 +126,8 @@ export default class Presentation extends React.Component {
             <Image src={images.milestones.replace("/", "")}
                    width="900px"/>
           </Slide>
-          <Slide>
+
+          <Slide notes="https://www.dreamstime.com/royalty-free-stock-image-cartoon-angry-army-drill-sergeant-shouting-image19836396">
               <Heading textColor='black'
                        textSize='5rem'>
                 Angular is opinionated
@@ -183,7 +187,7 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
 
-          <Slide>
+          <Slide notes="https://www.flickr.com/photos/atin800/5560200528/">
               <Heading textColor='black'
                        textSize='5rem'>
                 Modules
@@ -207,7 +211,7 @@ export default class Presentation extends React.Component {
             ]}
           />
 
-          <Slide>
+          <Slide notes="https://www.flickr.com/photos/peterbecker/233071629/">
               <Heading textColor='black'
                        textSize='5rem'>
                 Components
@@ -230,7 +234,7 @@ export default class Presentation extends React.Component {
             ]}
           />
 
-          <Slide>
+          <Slide notes="https://www.flickr.com/photos/barnimages/26712260550/">
               <Heading textColor='black'
                        textSize='5rem'>
                 Templates
@@ -253,12 +257,12 @@ export default class Presentation extends React.Component {
             ]}
           />
 
-          <Slide>
+          <Slide notes="https://pixabay.com/en/mark-marker-hand-leave-glass-804938/">
             <Image src={images.services.replace("/", "")}
                    width="900px"/>
           </Slide>
 
-          <Slide>
+          <Slide notes="https://www.flickr.com/photos/132604339@N03/22724469359">
               <Heading textColor='black'
                        textSize='5rem'>
                 Dependency injection
@@ -280,12 +284,12 @@ export default class Presentation extends React.Component {
             ]}
           />
 
-          <Slide>
+          <Slide notes="">
             <Image src={images.http.replace("/", "")}
                    width="900px"/>
           </Slide>
 
-          <Slide>
+          <Slide notes="">
             <Image src={images.rx.replace("/", "")}
                    width="900px"/>
           </Slide>
@@ -317,8 +321,11 @@ export default class Presentation extends React.Component {
             ]}
           />
 
-          <Slide>
+          <Slide notes="https://www.flickr.com/photos/ell-r-brown/7160371456">
             <Image src={images.thanks.replace("/", "")} width="900px"/>
+            <Text>
+            Maurice de Beijer - @mauricedb
+            </Text>
           </Slide>
 
 
