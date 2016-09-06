@@ -6,7 +6,8 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class MovieService {
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) { 
+  }
 
   getMovies() {
     return this.http
