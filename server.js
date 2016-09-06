@@ -17,6 +17,10 @@ app.use(require("webpack-dev-middleware")(compiler, {
 
 app.use(require("webpack-hot-middleware")(compiler));
 
+app.get("/prismjs/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "node_modules", req.path));
+});
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });

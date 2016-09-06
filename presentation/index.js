@@ -34,6 +34,8 @@ import createTheme from "spectacle/lib/themes/default";
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
+require("prismjs");
+require("prismjs/components/prism-typescript");
 
 const images = {
   title: require("../assets/images/title.png"),
