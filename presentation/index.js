@@ -109,7 +109,7 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Heading textColor='black'
-                     textSize='5rem'
+                     textSize='4rem'
                      margin='50px'>
                 Angular 2 !== Angular 1
             </Heading>
