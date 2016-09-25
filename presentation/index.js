@@ -38,6 +38,8 @@ require("prismjs");
 require("prismjs/components/prism-typescript");
 
 const images = {
+  techdays2016: require("../assets/images/techdays2016.png"),
+  techdays2016title: require("../assets/images/techdays2016title.png"),
   title: require("../assets/images/title.png"),
   maurice: require("../assets/images/maurice1024.jpg"),
   lookingback: require("../assets/images/lookingback.jpg"),
@@ -74,11 +76,16 @@ export default class Presentation extends React.Component {
         <Deck transition={["fade"]}
               transitionDuration={500}
               progress='bar'>
-          <Slide bgImage={images.title.replace("/", "")}>
-            <Heading margin="250px 0px 0px">
+              
+          <Slide bgImage={images.techdays2016.replace("/", "")}>
+          </Slide>
+
+          <Slide bgImage={images.techdays2016title.replace("/", "")}>
+            <Heading margin="0px 0px 0px">
               The productive developer guide to Angular 2
             </Heading>
           </Slide>
+
           <Slide bgImage={images.maurice.replace("/", "")}>
               <Heading textColor='black'>
                 Who am I?
