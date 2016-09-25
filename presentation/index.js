@@ -44,7 +44,6 @@ const images = {
   trends: require("../assets/images/trends.png"),
   ng1: require("../assets/images/ng1.png"),
   ng2: require("../assets/images/ng2.png"),
-  milestones: require("../assets/images/milestones.png"),
   sergeant: require("../assets/images/sergeant.png"),
   reactStarter: require("../assets/images/react-starter.png"),
   typescript: require("../assets/images/typescript.png"),
@@ -121,11 +120,6 @@ export default class Presentation extends React.Component {
                 <Image src={images.ng1.replace("/", "")}/>
               </Fill>
             </Layout>
-          </Slide>
-
-          <Slide>
-            <Image src={images.milestones.replace("/", "")}
-                   width="900px"/>
           </Slide>
 
           <Slide notes="https://www.dreamstime.com/royalty-free-stock-image-cartoon-angry-army-drill-sergeant-shouting-image19836396">
