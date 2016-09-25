@@ -122,7 +122,6 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-
           <Slide>
             <Image src={images.milestones.replace("/", "")}
                    width="900px"/>
@@ -203,12 +202,12 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/app.module.ts")}
             ranges={[
               { loc: [0, 255], title: "Angular 2 main module" },
-              { loc: [28, 30], note: "An ECMA Script 2015 class" },
-              { loc: [12, 13], note: "The module decorator" },
-              { loc: [ 0, 11], note: "ECMA Script 2015 imports" },
-              { loc: [18, 23], note: "Other module dependencies" },
-              { loc: [13, 18], note: "Components declared by this module" },
-              { loc: [24, 27], note: "The root components to render" }
+              { loc: [24, 26], note: "An ECMA Script 2015 class" },
+              { loc: [ 9, 10], note: "The module decorator" },
+              { loc: [ 0,  9], note: "ECMA Script 2015 imports" },
+              { loc: [10, 15], note: "Other module dependencies" },
+              { loc: [15, 20], note: "Components declared by this module" },
+              { loc: [20, 23], note: "The root components to render" }
             ]}
           />
 
@@ -227,11 +226,11 @@ export default class Presentation extends React.Component {
             code={require("raw!../assets/code/app.component.ts")}
             ranges={[
               { loc: [0, 255], title: "The main component" },
-              { loc: [7,  10], note: "The component class"  },
+              { loc: [8,  11], note: "The component class"  },
               { loc: [2,   3], note: "The component decorator" },
-              { loc: [3,   4], note: "The markup tag" },
-              { loc: [4,   5], note: "Location of markup" },
-              { loc: [8,   9], note: "Properties are exposed to the template" }
+              { loc: [4,   5], note: "The markup tag" },
+              { loc: [5,   6], note: "Location of markup" },
+              { loc: [9,  10], note: "Properties are exposed to the template" }
             ]}
           />
 
@@ -315,10 +314,10 @@ export default class Presentation extends React.Component {
             ranges={[
               { loc: [ 0, 255], title: "Movies component" },
               { loc: [ 1,   2], note: "Import the movie service definition" },
-              { loc: [ 7,   8], note: "Register the movie service definition for DI" },
-              { loc: [13,  15], note: "Inject the movie service" },
-              { loc: [16,  21], note: "The initialization component lifecycle hook" },
-              { loc: [17,  20], note: "Load the movie data" }
+              { loc: [ 8,   9], note: "Register the movie service definition for DI" },
+              { loc: [14,  16], note: "Inject the movie service" },
+              { loc: [17,  22], note: "The initialization component lifecycle hook" },
+              { loc: [18,  21], note: "Load the movie data" }
             ]}
           />
 
