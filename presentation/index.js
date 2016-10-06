@@ -38,8 +38,10 @@ require("prismjs");
 require("prismjs/components/prism-typescript");
 
 const images = {
-  techdays2016: require("../assets/images/techdays2016.png"),
-  techdays2016title: require("../assets/images/techdays2016title.png"),
+  // techdays2016: require("../assets/images/techdays2016.png"),
+  // techdays2016title: require("../assets/images/techdays2016title.png"),
+  gdgDevfestNL: require('../assets/images/gdg-devfest-nl-dark.png'),
+  amsterdam: require('../assets/images/amsterdam.jpg'),
   title: require("../assets/images/title.png"),
   maurice: require("../assets/images/maurice1024.jpg"),
   lookingback: require("../assets/images/lookingback.jpg"),
@@ -69,6 +71,8 @@ const theme = createTheme({
   primary: "#ffffff"
 });
 
+
+
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -77,13 +81,18 @@ export default class Presentation extends React.Component {
               transitionDuration={500}
               progress='bar'>
               
-          <Slide bgImage={images.techdays2016.replace("/", "")}>
+          <Slide bgImage={images.amsterdam.replace("/", "")}>
+            <Image src={images.gdgDevfestNL.replace("/", "")}
+                   width="800px"/>
+            <Image src={images.ng2.replace("/", "")} />
           </Slide>
-
-          <Slide bgImage={images.techdays2016title.replace("/", "")}>
-            <Heading margin="0px 0px 0px">
+          
+          <Slide bgImage={images.amsterdam.replace("/", "")}>
+            <Heading margin="0px 0px 0px" 
+                     textColor='#404040'>
               The productive developer guide to Angular 2
             </Heading>
+            <Image src={images.ng2.replace("/", "")} />
           </Slide>
 
           <Slide bgImage={images.maurice.replace("/", "")}>
@@ -132,7 +141,7 @@ export default class Presentation extends React.Component {
           <Slide notes="https://www.dreamstime.com/royalty-free-stock-image-cartoon-angry-army-drill-sergeant-shouting-image19836396">
               <Heading textColor='black'
                        textSize='5rem'>
-                Angular is opinionated
+                Angular 2 is opinionated
             </Heading>
             <Image src={images.sergeant.replace("/", "")}
                    margin="40px auto 0px"
