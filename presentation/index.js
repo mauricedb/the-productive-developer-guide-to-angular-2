@@ -62,7 +62,8 @@ const images = {
   di: require("../assets/images/di.png"),
   http: require("../assets/images/http.png"),
   rx: require("../assets/images/rx.png"),
-  thanks: require("../assets/images/thanks.png")
+  thanks: require("../assets/images/thanks.png"),
+  upnext: require("../assets/images/upnext-1300-16x9.png")
 };
 
 preloader(images);
@@ -340,6 +341,9 @@ export default class Presentation extends React.Component {
             </Text>
           </Slide>
 
+          <Slide bgImage={images.amsterdam.replace("/", "")}>
+            <Image src={images.upnext.replace("/", "")}/>
+          </Slide>
 
         </Deck>
       </Spectacle>
