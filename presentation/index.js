@@ -313,7 +313,8 @@ export default class Presentation extends React.Component {
               { loc: [ 0, 255], title: "HTTP Requests" },
               { loc: [ 1,   2], note: "Import HTTP" },
               { loc: [ 8,  10], note: "Inject the HTTP service" },
-              { loc: [11,  16], note: "Do the AJAX call and return the JSON payload" },
+              { loc: [13,  15], note: "Set the appropriate HTTP headers" },
+              { loc: [16,  21], note: "Do the AJAX call and return the JSON payload" },
               { loc: [ 3,   4], note: "Add the RX map operator" }
             ]}
           />
